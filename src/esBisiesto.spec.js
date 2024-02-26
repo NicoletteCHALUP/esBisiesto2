@@ -16,6 +16,9 @@ describe("Es Bisiesto", () => {
     it("Todos los años divisibles por 100 pero no por 400 NO son años bisiestos (por ejemplo, 1700, 1800 y 1900 NO fueron años bisiestos, NI 2100 será un año bisiesto) ", () => {
         expect(esBisiesto(2100)).toEqual(false);
       });
+    it("Todos los años divisibles por 4 pero no por 100 SON años bisiestos (por ejemplo, 2008, 2012, 2016), ", () => {
+        expect(esBisiesto(2008)).toEqual(true);
+      });
   });
 
  
